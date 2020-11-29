@@ -1,0 +1,25 @@
+ public class Hero : Character
+    {
+        public Hero(int x, int y, int hp) : base(x, y, "H")
+        {
+            HP = hp;
+            MaxHP = hp;
+            Damage = 2;
+        }
+
+        public override MovementEnum ReturnMove()
+        {
+            throw new NotImplementedException();
+        }
+
+        public static int ReturnMoveG()
+        {
+            int num = Enemy.Random();
+
+
+            return num;
+        }
+
+        public string ToString()
+        { return "Player Stats: "+ "\n" + "Hp: " + Convert.ToString(HP) + "\n" + "Damage: "+  Convert.ToString(Damage) + "\n" +"["+ Convert.ToString(X) + "," + Convert.ToString(Y) + "]"; }
+    }
