@@ -1,9 +1,6 @@
   public abstract class Character : Tile
     {
-        /*private int ex;
-        private int ey;
-        private int hx; 
-        private int hy;*/
+       
 
         protected int HP;
         public int GetHp() { return HP; }
