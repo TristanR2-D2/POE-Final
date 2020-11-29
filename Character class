@@ -2,7 +2,7 @@
     {
         /*private int ex;
         private int ey;
-        private int hx;
+        private int hx; 
         private int hy;*/
 
         protected int HP;
