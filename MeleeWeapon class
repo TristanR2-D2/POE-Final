@@ -1,0 +1,35 @@
+ public class MeleeWeapon : Weapon
+    {
+        public enum Type
+        {
+           Dagger= 112,
+           Longsword = 113
+        };
+        public override int Get_range()
+        {
+            return base.Get_range();
+        }
+
+        public override string ToString()
+        {
+            throw new NotImplementedException();
+        }
+
+        public MeleeWeapon(int code, int x, int y) : base(x, y, "MW")
+        { if (code == 112)
+            { _damage = 3;
+                _range =1;
+                _durability =10;
+                _wType ="Dagger";
+                _cost =3; }
+        else if (code == 113)
+            {
+                _damage = 4;
+                _range = 1;
+                _durability = 6;
+                _wType = "Longsword";
+                _cost = 5;
+            }
+
+        }
+    }
