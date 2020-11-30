@@ -1,0 +1,13 @@
+ public class Leader : Enemy
+    {
+        public override MovementEnum ReturnMove()
+        {
+            throw new NotImplementedException();
+        }
+
+        private int _tile { get; set; }
+        public Leader(int x, int y) : base(x, y, 2, 20, 20, "L")
+        {
+
+        }
+    }
