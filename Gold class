@@ -1,0 +1,21 @@
+ public class Gold : Item
+    {
+        public Gold(int x, int y) : base(x, y)
+        { _goldAmmount = RandomGoldA(); }
+
+        private int _goldAmmount;
+
+        public int Get_goldAmmount() { return _goldAmmount; }
+
+        protected int RandomGoldA()
+        {
+            Random random = new Random();
+            int randomNumber = random.Next(1, 6);
+            return randomNumber;
+        }
+
+        public override string ToString()
+        {
+            throw new NotImplementedException();
+        }
+    }
