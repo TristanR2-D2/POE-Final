@@ -87,7 +87,7 @@
         }
 
         public void UpdateVision()
-        { Character.VisionArray = new int[Width,Height];
+        { Character.VisionArray = new string[Width,Height];
             for (int k = 0; k < Width; k++)
             {
                 for (int i = 0; i < Height; i++)
