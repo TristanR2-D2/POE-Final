@@ -1,0 +1,38 @@
+public class RangeWeapon : Weapon
+    {
+        public enum Type
+        {
+            Rifel = 211,
+            Longbow = 311
+        };
+        public override int Get_range()
+        {
+            return base.Get_range();
+        }
+
+        public override string ToString()
+        {
+            throw new NotImplementedException();
+        }
+
+        public RangeWeapon(int code, int x, int y) : base(x, y, "RW")
+        {
+            if (code == 211)
+            {
+                _damage = 5;
+                _range = 3;
+                _durability = 3;
+                _wType = "Rifel";
+                _cost = 7;
+            }
+            else if (code == 311)
+            {
+                _damage = 4;
+                _range = 2;
+                _durability = 4;
+                _wType = "Longbow";
+                _cost = 6;
+            }
+
+        }
+    }
