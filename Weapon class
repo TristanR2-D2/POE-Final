@@ -1,0 +1,18 @@
+ public abstract class Weapon : Item
+    {
+        protected int _damage;
+        public int Get_damage() { return _damage; }
+        protected int _range;
+        public virtual int Get_range() { return _range; }
+        protected int _durability;
+        public int Get_durability() { return _durability; }
+        protected int _cost;
+        public int Get_cost() { return _cost; }
+        protected string _wType;
+        public string Get_wType() { return _wType; }
+
+        public Weapon(int x, int y, string symbol) : base(x, y)
+        {
+
+        }
+    }
