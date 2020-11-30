@@ -11,7 +11,7 @@
         protected int Damage;
         public int GetDamage() { return Damage; }
 
-        protected int[,] VisionArray = new int[14, 8];
+        public static string[,] VisionArray ;
 
         public enum Movement { 
             NoMovement=0,
